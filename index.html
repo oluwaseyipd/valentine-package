@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loader Page -->
+  <div class="loader-container">
+    <div class="loader-circle">
+        <div class="loader-circle">
+            <!-- Circular SVG for the loading effect -->
+            <svg class="circle" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="55"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="55"></circle>
+            </svg>
+            <img src="images/gift.png" alt="Gift" class="gift-img">
+            <div class="loader-text">
+              <p>Valentine</p>
+              <div class="percentage-container">
+                <span id="percentage">0%</span>
+              </div>
+            </div>
+          </div> 
+      </div>
+  </div>
+
+  <div id="celebration-image"  style="display:none;">
+    <img src="images/open-gift.png" alt="Celebration" class="celebration-img" id="celebration-img" />
+  </div>
+
+    <section id="device" class="device">
+        <div class="device__top">
+          <img class="album-art" src="images/alburm/51941.jpg" alt="album art" />
+          <img class="album-art" src="images/alburm/51941.jpg" alt="album art" />
+
+          <img class="album-art" src="images/alburm/51941.jpg" alt="album art" />
+
+        </div>
+        <div class="device__mid">
+          <div class="info">
+            <hgroup class="info__left">
+              <h1 class="info__song">
+                <span class="song">No Reptiles</span>
+                <span class="song">Gosh</span>
+                <span class="song">Norrland</span>
+              </h1>
+              <h2 class="info__artist">
+                <span class="artist">by Everything Everything</span>
+                <span class="artist">by Jamie xx</span>
+                <span class="artist">by Gidge</span>
+              </h2>
+            </hgroup>
+      
+            <hgroup class="info__right">
+              <h1 class="info__type">Playlist <span id="current-song">1</span> of 3</h1>
+              <h2 class="info__type-name">My faves</h2>
+            </hgroup>
+          </div>
+    
+        </div>
+        <div class="device__bottom">
+
+          <div class="progress">
+            <input id="slider" type="range" value="0" min="0" step="1" />
+          </div>
+
+          <div class="equaliser"></div>
+
+          <div class="controls">
+            <!-- Previous -->
+            <button class="controls__round-button" id="previous-button">
+              <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.13672 5L9.5 0.5V9.5L3.13672 5ZM0.5 0.5H2.01172V9.5H0.5V0.5Z" fill="#000040" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </button>
+
+            <!-- Play -->
+            <button class="controls__round-button controls__round-button--large" id="play-button">
+              <div class="play">
+                <svg class="controls__play" width="20" height="20" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.0195312 0.269531L13.7305 9L0.0195312 17.7305V0.269531Z" fill="#000040"/>
+                </svg>
+                <span class="sr-only">Play</span>
+              </div>
+              <div class="pause">
+                <svg width="20" height="20" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5195 0.269531H15.5V17.7305H10.5195V0.269531ZM0.5 17.7305V0.269531H5.48047V17.7305H0.5Z" fill="#000040"/>
+                </svg>
+                <span class="sr-only">Pause</span>
+              </div>
+            </button>
+
+            <!-- Next -->
+            <button class="controls__round-button" id="next-button">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.98828 0.5H9.5V9.5H7.98828V0.5ZM0.5 9.5V0.5L6.86328 5L0.5 9.5Z" fill="#000040"/>
+              </svg>
+              <span class="sr-only">Next</span>
+            </button>
+
+            <!-- Repeat -->
+            <button class="controls__round-button" id="repeat-button">
+              <img src="images/repeat.png" alt="" id="repeat-icon">
+              <span class="sr-only">Repeat</span>
+            </button>
+
+            
+          </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
